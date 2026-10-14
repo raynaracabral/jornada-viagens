@@ -1,3 +1,18 @@
+:root {
+    --backgroud-primery-color: #ffff;
+    --backgorund-secondary-color: #0000;
+    --backgorund-tertiary-color: #f5f5f5;
+
+    --button-primery-color: #8F0101;
+    --button-secondary-color: #B81515;
+
+    --text-primery-color: #222222;
+    --text-secondary-color: #ffff;
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
