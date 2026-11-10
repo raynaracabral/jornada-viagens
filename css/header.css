@@ -5,10 +5,14 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 38px 48px;
+  position: relative;
 }
 
 input[type="checkbox"]:checked ~ nav {
   display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
 nav {
@@ -16,8 +20,13 @@ nav {
 }
 
 .navigation-menu {
+  position: relative;
   display: flex;
   align-items: center;
+}
+
+.navigation-menu label {
+  cursor: pointer;
 }
 
 .logo {
