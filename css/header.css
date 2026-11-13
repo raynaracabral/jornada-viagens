@@ -5,10 +5,16 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 38px 48px;
+  position: relative;
 }
 
 input[type="checkbox"]:checked ~ nav {
   display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-secondary-color);
 }
 
 nav {
@@ -18,6 +24,10 @@ nav {
 .navigation-menu {
   display: flex;
   align-items: center;
+}
+
+.navigation-menu label {
+  cursor: pointer;
 }
 
 .logo {
@@ -30,8 +40,42 @@ nav {
   display: block;
 }
 
+.list-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-links li a {
+  display: block;
+  padding: 0 10px;
+  color: var(--text-secondary-color);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-menu {
+    margin-top: 0;
+    width: 467px;
+  }
+  .navigation-menu label {
+    display: none;
+  }
+  .navigation-menu nav {
+    display: block;
+    width: 100%;
+  }
+  .navigation-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .navigation-menu li {
+    margin: 0;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   
-  
-  
-}
+} 
