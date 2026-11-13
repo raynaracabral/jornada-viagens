@@ -36,8 +36,8 @@ nav {
   height: 64px;
 }
 
-.logo img {
-  display: block;
+.img-desktop {
+  display: none;
 }
 
 .list-links {
@@ -77,5 +77,13 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-  
-} 
+  .img-mobile {
+    display: none;
+  }
+  .img-desktop {
+    display: block;
+  }
+  .list-links li a:hover {
+    color: var(--button-primary-color);
+  }
+}
