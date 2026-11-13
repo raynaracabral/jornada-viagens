@@ -83,4 +83,7 @@ nav {
   .img-desktop {
     display: block;
   }
+  .list-links li a:hover {
+    color: var(--button-primary-color);
+  }
 }
