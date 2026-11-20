@@ -4,6 +4,14 @@
   background: url("../img/hero-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+.hero h2 {
+  padding: 24px 40px;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: var(--text-wight);
 }
 @media screen and (min-width: 768px) {
   .hero-img {
@@ -12,11 +20,21 @@
     background-size: cover;
     background-position: center;
   }
+  .hero h2 {
+    padding: 32px 48px;
+    font-size: 22px;
+    line-height: 1.6;
+  }
 }
 @media screen and (min-width: 1024px) {
   .hero-img {
     height: 620px;
     background: url("../img/hero-desktop.png") no-repeat;
     background-size: cover;
+  }
+  .hero h2 {
+    padding: 48px 60px;
+    font-size: 26px;
+    line-height: 1.6;
   }
 }
