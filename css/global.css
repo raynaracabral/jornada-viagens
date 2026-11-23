@@ -29,4 +29,22 @@
 
 body {
   font-family: Montserrat;
+  font-weight: var(--text-primary-color);
+}
+.section-tittle h2 {
+  font-size: 28px;
+  margin: 0;
+  text-align: center;
+}
+.section-tittle hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--button-secondary-color);
+  border: none;
+  margin: 16px auto 32px;
+}
+@media screen and (min-width: 768px) {
+  .section-tittle h2 {
+    font-size: 32px;
+  }
 }
