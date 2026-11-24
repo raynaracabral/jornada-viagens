@@ -43,8 +43,33 @@ body {
   border: none;
   margin: 16px auto 32px;
 }
+.button {
+  width: 280px;
+  height: 44px;
+  color: var(--text-secondary-color);
+  font-weight: var(--tittle-weight);
+  font-size: 20px;
+  background-color: var(--button-secondary-color);
+  border-radius: 16px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 64px;
+}
+.card header {
+  display: block;
+  background-color: transparent;
+  position: static;
+  padding: 0;
+  margin-bottom: 24px;
+}
 @media screen and (min-width: 768px) {
   .section-tittle h2 {
     font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button:hover {
+    background-color: var(--button-primary-color);
   }
 }
