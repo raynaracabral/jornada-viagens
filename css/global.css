@@ -45,7 +45,7 @@ body {
 }
 .button {
   width: 280px;
-  height: 44px;
+  height: 64px;
   color: var(--text-secondary-color);
   font-weight: var(--tittle-weight);
   font-size: 20px;
@@ -62,12 +62,12 @@ body {
   padding: 0;
   margin-bottom: 24px;
 }
+
 @media screen and (min-width: 768px) {
   .section-tittle h2 {
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .button:hover {
     background-color: var(--button-primary-color);
