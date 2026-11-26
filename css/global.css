@@ -29,7 +29,7 @@
 
 body {
   font-family: Montserrat;
-  font-weight: var(--text-primary-color);
+  font-weight: var(--text-weight);
 }
 .section-tittle h2 {
   font-size: 28px;
@@ -44,7 +44,8 @@ body {
   margin: 16px auto 32px;
 }
 .button {
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   height: 64px;
   color: var(--text-secondary-color);
   font-weight: var(--tittle-weight);
@@ -60,7 +61,7 @@ body {
   background-color: transparent;
   position: static;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {

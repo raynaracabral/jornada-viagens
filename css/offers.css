@@ -1,9 +1,17 @@
+.offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 .offers-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 24px;
+  width: 100%;
+  margin: 0 auto;
 }
 .card {
   color: var(--text-secondary-color);
@@ -14,25 +22,28 @@
   box-sizing: border-box;
   border-radius: 16px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card header {
   display: block;
   position: relative;
 }
 .card header p {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: var(--text-weight);
 }
 
 .card header h3 {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: var(--title-weight);
   margin: 8px 0px 0px;
 }
 .card header span {
-  font-size: 32px;
-  margin-top: 24px;
-  display: inline-block;
+  font-size: 34px;
+  margin-top: 16px;
+  display: block;
 }
 
 .card.japao {
@@ -52,12 +63,8 @@
   background-size: cover;
 }
 
-.card.japao {
-  background: url("../img/img-card-japao.jpg") no-repeat;
-  background-size: cover;
-}
 @media screen and (min-width: 768px) {
-  .offers {
+  .offers-card {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -65,31 +72,31 @@
 }
 @media screen and (min-width: 1024px) {
   .offers-card {
-    width: 420px;
+    max-width: 864px;
   }
+
   .card {
-    width: 588px;
-    height: 308px;
+    width: calc((100% - 24px) / 2);
+    max-width: 420px;
+    min-height: 308px;
   }
-  .card header h3 {
-    font-size: 48px;
-    font-weight: var(--title-weight);
-    margin: 8px 0px 0px;
-  }
+
   .card header span {
     font-size: 40px;
-    margin-top: 24px;
-    display: inline-block;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .offers-card {
-    width: 588px;
+    max-width: 1200px;
+  }
+
+  .card {
+    max-width: 588px;
   }
 }
 @media screen and (min-width: 1920px) {
   .offers-card {
-    width: 1250px;
-    margin: 0 auto;
+    max-width: 1200px;
   }
 }
